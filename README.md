@@ -10,15 +10,15 @@ A free, open-source, instruction-only plugin for generating concise, meaningful 
 
 **Just paste the content directly.** You do not need to describe a theorem, definition, or section in words: copy its LaTeX source, or copy and paste content directly from a LyX document, and ask for a label. The generator interprets the content and its semantic role to suggest a concise English label.
 
-For example, paste this LaTeX definition (including its Hebrew text):
+For example, paste this LaTeX definition:
 
 **Input:**
 
 ```latex
-\begin{defn}[מרחב מדגם]
-\textbf{מרחב מדגם }\textenglish{\textbf{(sample
-space)}} הוא קבוצה לא ריקה $\Omega\neq\nemptyset$ שאיבריו מסומנים
-ב-$\omega\in\Omega$.
+\begin{defn}[Sample Space]
+\textbf{Sample space} is a nonempty set
+$\Omega\neq\emptyset$ whose elements are denoted by
+$\omega\in\Omega$.
 \end{defn}
 ```
 
