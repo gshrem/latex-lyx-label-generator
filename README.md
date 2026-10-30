@@ -1,30 +1,79 @@
 # LaTeX & LyX Label Generator
 
-A free, instruction-only ChatGPT plugin by **Gilad Shrem** that creates short, clear, semantically meaningful English labels for cross-references in LaTeX and LyX documents.
+**Original creator: [Gilad Shrem](https://github.com/gshrem)**
+
+A free, open-source, instruction-only plugin for generating concise, meaningful English labels for cross-references in **LaTeX** and **LyX** documents. It works with content in any language and across academic disciplines.
+
+> **Installation note:** This repository provides an installable plugin source for **supported Codex / ChatGPT desktop local-marketplace workflows**. It is **not currently listed in the universal ChatGPT Plugins Directory**, and a GitHub installation does **not** provide `@` invocation in all ChatGPT web or mobile conversations.
 
 ## What it does
 
-Given a theorem, definition, section, equation, figure, table, algorithm, or another referenceable element, the plugin suggests a descriptive label such as:
+| Input | Example label |
+| --- | --- |
+| A section about compact metric spaces | `sec:compact-metric-spaces` |
+| The fundamental theorem of calculus | `thm:fundamental-theorem-of-calculus` |
+| A definition of positive semidefinite matrices | `def:positive-semidefinite-matrix` |
+| A figure showing a protein interaction network | `fig:protein-interaction-network` |
+| A binary-search algorithm | `alg:binary-search` |
 
-- `sec:compact-metric-spaces`
-- `thm:fundamental-theorem-of-calculus`
-- `def:positive-semidefinite-matrix`
-- `fig:protein-interaction-network`
+- Supports sections, chapters, appendices, theorems, lemmas, definitions, equations, figures, tables, code listings, algorithms, and custom referenceable structures.
+- Uses a relevant element-type prefix and **no more than five descriptive words** separated by hyphens.
+- Accepts text, mathematical expressions, and LaTeX source written in **any language**; generates labels in English.
+- Infers the semantic type of custom environments rather than blindly using technical environment names.
+- Respects users' established naming conventions.
+- Avoids duplicate labels in a batch or among supplied existing labels. **Document-wide uniqueness requires the complete set of existing labels.**
+- By default, returns only the label key, ready for a LyX label field or for `\\label{...}` in LaTeX.
 
-Labels use semantic prefixes and at most five descriptive English words. The plugin accepts input in any language, respects user-defined naming conventions, and can avoid collisions with existing labels supplied by the user. Without the full set of existing labels, document-wide uniqueness cannot be guaranteed.
+## Install through the Git-backed plugin marketplace
 
-## Availability
+**Compatible clients only.** OpenAI documents Git-backed plugin marketplaces for Codex, and local plugin installation through supported ChatGPT desktop workflows. This is separate from the public ChatGPT Plugins Directory.
 
-The ChatGPT plugin is being prepared for public review. **It is not yet publicly installable.** This repository hosts the project's information and policies; it is not itself a hosted app or a ChatGPT installation link.
+1. In a supported Codex CLI installation, add this repository as a plugin marketplace:
 
-No separate server, API, user account, or payment is required to operate the skill. Its instructions run within a compatible host application such as ChatGPT.
+   ```bash
+   codex plugin marketplace add gshrem/latex-lyx-label-generator
+   ```
 
-## Publisher and policies
+2. Check the registered marketplace:
 
-**Publisher:** Gilad Shrem (independent developer)
+   ```bash
+   codex plugin marketplace list
+   ```
 
-- [Support and bug reports](SUPPORT.md)
+3. In the supported ChatGPT desktop plugin interface, restart the app if necessary, open the **Plugins Directory**, choose **Gilad Shrem's LaTeX Tools**, and install **LaTeX & LyX Label Generator**.
+
+4. Use the plugin or its `latex-lyx-labels` skill in supported conversations. Start with a theorem, definition, section heading, or equation, and request a label.
+
+Installation interfaces and availability depend on your client, account, and configuration. These instructions **do not** imply that installation from GitHub works across all regular ChatGPT web, Android, or iOS conversations.
+
+### Manual installation and inspection
+
+The packaged plugin is in [`plugins/latex-lyx-label-generator/`](plugins/latex-lyx-label-generator/), including the portable `plugin.json`, its `skills/` directory, metadata and icon. The repository's [`.agents/plugins/marketplace.json`](.agents/plugins/marketplace.json) advertises that directory as a local marketplace entry.
+
+If your AI client supports standalone skills but not plugin marketplaces, use [`SKILL.md`](plugins/latex-lyx-label-generator/skills/latex-lyx-labels/SKILL.md) following that client's own skill-import instructions. Do not assume every client supports direct skill import.
+
+## Attribution and licensing
+
+**Original creator: Gilad Shrem**  
+**Official source:** https://github.com/gshrem/latex-lyx-label-generator  
+**Plugin source version:** `1.0.1`
+
+This project is freely shareable and modifiable, provided the appropriate original attribution and applicable license notices are retained.
+
+- **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/):** Skill instructions, original prose/documentation and artwork. When redistributing adapted content, provide attribution and indicate changes.
+- **[MIT](LICENSE-MIT.txt):** Machine-readable configuration and metadata files.
+- See [full license scope](LICENSE.md), [attribution guidance](ATTRIBUTION.md), and [citation details](CITATION.cff).
+
+You **do not** need to place attribution inside every label generated by the skill. Credit is relevant when distributing or adapting the project itself.
+
+GitHub's **Cite this repository** feature uses `CITATION.cff` to display citation formats. GitHub forks and commit history also provide provenance, though neither prevents someone from removing credit from a separate copy.
+
+## Privacy and support
+
+The plugin operates solely through instructions within the host AI application and has **no publisher-operated server, telemetry, external API, or storage of users' conversations**. The host platform may process messages under its own privacy policy.
+
+- [Support and bug reports](SUPPORT.md) via [GitHub Issues](https://github.com/gshrem/latex-lyx-label-generator/issues)
 - [Privacy policy](PRIVACY.md)
 - [Terms of use](TERMS.md)
 
-This is an independent project and is not affiliated with or endorsed by OpenAI, LaTeX Project, or LyX.
+This is an independent project, not affiliated with or endorsed by OpenAI, LaTeX Project, or LyX.
