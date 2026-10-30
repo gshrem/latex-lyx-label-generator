@@ -8,6 +8,28 @@ A free, open-source, instruction-only plugin for generating concise, meaningful 
 
 ## What it does
 
+**Just paste the content directly.** You do not need to describe a theorem, definition, or section in words: copy its LaTeX source, or copy and paste content directly from a LyX document, and ask for a label. The generator interprets the content and its semantic role to suggest a concise English label.
+
+For example, paste this LaTeX definition (including its Hebrew text):
+
+**Input:**
+
+```latex
+\begin{defn}[מרחב מדגם]
+\textbf{מרחב מדגם }\textenglish{\textbf{(sample
+space)}} הוא קבוצה לא ריקה $\Omega\neq\nemptyset$ שאיבריו מסומנים
+ב-$\omega\in\Omega$.
+\end{defn}
+```
+
+**Output:**
+
+```text
+def:sample-space
+```
+
+You can also provide a plain-language description if that is more convenient.
+
 | Input | Example label |
 | --- | --- |
 | A section about compact metric spaces | `sec:compact-metric-spaces` |
