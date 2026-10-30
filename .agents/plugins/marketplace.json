@@ -1,0 +1,20 @@
+{
+  "name": "gshrem-latex-tools",
+  "interface": {
+    "displayName": "Gilad Shrem's LaTeX Tools"
+  },
+  "plugins": [
+    {
+      "name": "latex-lyx-label-generator",
+      "source": {
+        "source": "local",
+        "path": "./plugins/latex-lyx-label-generator"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
