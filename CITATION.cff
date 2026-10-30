@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use, redistribute, or adapt this project, please credit its original creator."
+type: software
+title: "LaTeX & LyX Label Generator"
+authors:
+  - family-names: "Shrem"
+    given-names: "Gilad"
+version: 1.0.1
+url: "https://github.com/gshrem/latex-lyx-label-generator"
+repository-code: "https://github.com/gshrem/latex-lyx-label-generator"
+abstract: "An instruction-only plugin and skill for generating concise semantic labels for LaTeX and LyX cross-references."
