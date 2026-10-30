@@ -24,6 +24,19 @@ A free, open-source, instruction-only plugin for generating concise, meaningful 
 - Avoids duplicate labels in a batch or among supplied existing labels. **Document-wide uniqueness requires the complete set of existing labels.**
 - By default, returns only the label key, ready for a LyX label field or for `\label{...}` in LaTeX.
 
+## Use in a personal ChatGPT Project (recommended for ChatGPT web users)
+
+This is a convenient way to use the generator repeatedly in private ChatGPT conversations **without installing a plugin**:
+
+1. In ChatGPT, create a **new personal Project** (not a shared Project).
+2. Open the Project's **instructions** from its settings or menu.
+3. Copy the full contents of [`SKILL.md`](plugins/latex-lyx-label-generator/skills/latex-lyx-labels/SKILL.md) into the Project instructions, if the instructions field permits the full text. Alternatively, add `SKILL.md` as a Project file/source and set the Project instructions to: "Use the attached SKILL.md as the authoritative instructions for generating LaTeX and LyX labels. Follow its naming and output rules whenever I request a label."
+4. Start a chat **inside that Project**, paste a theorem, definition, section heading, equation, or other element, and request a label.
+
+The instructions or attached file remain available to subsequent chats **within that Project**. They do not automatically apply to chats outside it. Each person should create their **own private Project**: do not share a Project with strangers, because shared Projects may expose their chats and files to other members.
+
+Project features and instruction/file limits depend on the user's ChatGPT account. If the full Skill cannot be pasted into Project instructions, use the Project-file alternative above. This is an independent setup for each user, **not a one-click install or an officially listed public plugin**.
+
 ## Install through the Git-backed plugin marketplace
 
 **Compatible clients only.** OpenAI documents Git-backed plugin marketplaces for Codex, and local plugin installation through supported ChatGPT desktop workflows. This is separate from the public ChatGPT Plugins Directory.
