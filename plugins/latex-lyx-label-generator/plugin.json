@@ -1,0 +1,65 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "author": {
+    "name": "Gilad Shrem",
+    "url": "https://github.com/gshrem/latex-lyx-label-generator"
+  },
+  "description": "Generate concise, meaningful English labels for LaTeX and LyX cross-references from text, mathematical expressions, or LaTeX code in any language and discipline. A self-contained, instruction-only skill with no external dependencies.",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "capabilities": [],
+        "category": "Education & Research",
+        "composerIcon": "./assets/icon.png",
+        "defaultPrompt": [
+          "Generate a LaTeX or LyX label for the text or code I provide.",
+          "Generate one label per element, avoiding collisions with the existing labels I provide.",
+          "Return the full LaTeX label command for the equation I provide."
+        ],
+        "developerName": "Gilad Shrem",
+        "displayName": "LaTeX & LyX Label Generator",
+        "logo": "./assets/icon.png",
+        "longDescription": "Create short, meaningful, precise, and consistent English label keys for LaTeX and LyX cross-references. Paste text, a mathematical expression, or LaTeX code in any language. The skill supports all disciplines and experience levels, including sections, theorem-like environments, equations, figures, tables, algorithms, code listings, enumerated items, presentation frames, and custom referenceable elements. By default, it returns only the label key, using a semantic prefix, lowercase ASCII, hyphens, and no more than five descriptive words. It preserves explicit user naming conventions, determines custom environment types by semantic role, generates one label per element in order, and avoids duplicates within a generated set and supplied existing labels. It cannot guarantee document-wide uniqueness without the complete set of existing labels. Ask explicitly for a full LaTeX label command, explanations, alternatives, collision checks, or insertion guidance. The plugin contains one self-contained, instruction-only skill and requires no external APIs, MCP servers, authentication, or additional services.",
+        "shortDescription": "Clear LaTeX and LyX labels",
+        "websiteURL": "https://github.com/gshrem/latex-lyx-label-generator",
+        "supportURL": "https://github.com/gshrem/latex-lyx-label-generator/issues",
+        "privacyPolicyURL": "https://github.com/gshrem/latex-lyx-label-generator/blob/main/PRIVACY.md",
+        "termsOfServiceURL": "https://github.com/gshrem/latex-lyx-label-generator/blob/main/TERMS.md"
+      },
+      "publication": {
+        "release_notes": "Initial release. Adds one self-contained instruction-only skill for concise English LaTeX and LyX labels, preserving semantic prefixes, the five-word limit, user naming conventions, ordered batch output, and collision avoidance using supplied labels."
+      },
+      "review": {
+        "prompts": [
+          "Generate a LyX label for a section introducing compact metric spaces.",
+          "Generate a label for this Hebrew definition: מרחב מטרי הוא זוג המורכב מקבוצה ומפונקציית מרחק המקיימת את אקסיומות המטריקה.",
+          "Generate a label for a lemma about convergence of monotone sequences inside a custom LaTeX environment named mathbox.",
+          "Generate a label for a definition of a metric space. The existing labels include def:metric-space.",
+          "Generate one label per element, in order: a figure illustrating a protein interaction network; an algorithm describing binary search.",
+          "Return the full LaTeX label command for an equation expressing Bayes' theorem."
+        ]
+      }
+    }
+  },
+  "keywords": [
+    "latex",
+    "lyx",
+    "labels",
+    "label-generator",
+    "cross-references",
+    "cross-referencing",
+    "document-structure",
+    "equations",
+    "theorems",
+    "figures",
+    "tables",
+    "algorithms",
+    "academic-writing",
+    "scientific-writing",
+    "multilingual"
+  ],
+  "name": "latex-lyx-label-generator",
+  "version": "1.0.1",
+  "homepage": "https://github.com/gshrem/latex-lyx-label-generator",
+  "repository": "https://github.com/gshrem/latex-lyx-label-generator"
+}
