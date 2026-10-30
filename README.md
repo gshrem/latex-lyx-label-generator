@@ -22,7 +22,7 @@ A free, open-source, instruction-only plugin for generating concise, meaningful 
 - Infers the semantic type of custom environments rather than blindly using technical environment names.
 - Respects users' established naming conventions.
 - Avoids duplicate labels in a batch or among supplied existing labels. **Document-wide uniqueness requires the complete set of existing labels.**
-- By default, returns only the label key, ready for a LyX label field or for `\\label{...}` in LaTeX.
+- By default, returns only the label key, ready for a LyX label field or for `\label{...}` in LaTeX.
 
 ## Install through the Git-backed plugin marketplace
 
