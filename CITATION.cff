@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "If you use, redistribute, or adapt this project, please credit its original creator."
+message: "If you wish to cite this project, please use this metadata. Source reuse is governed by LICENSING.md; citation is not an extra condition for ordinary use."
 type: software
 title: "LaTeX & LyX Label Generator"
 authors:
@@ -8,4 +8,7 @@ authors:
 version: 1.0.1
 url: "https://github.com/gshrem/latex-lyx-label-generator"
 repository-code: "https://github.com/gshrem/latex-lyx-label-generator"
-abstract: "An instruction-only plugin and skill for generating concise semantic labels for LaTeX and LyX cross-references."
+license:
+  - CC-BY-4.0
+  - MIT
+abstract: "An instruction-only plugin and skill for generating concise semantic labels for LaTeX and LyX cross-references. Licenses apply to separate files as specified in LICENSING.md, not as a choice for every file."

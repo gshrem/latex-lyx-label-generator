@@ -3,6 +3,17 @@ name: latex-lyx-labels
 description: "Generate concise, meaningful English label keys for LaTeX and LyX cross-references from user-provided text, mathematical expressions, or LaTeX code in any language and discipline. Use when users ask to generate, name, suggest, shorten, standardize, or check labels for sections, theorems, definitions, equations, figures, tables, algorithms, code listings, enumerated items, presentation frames, or custom referenceable elements; request label keys or LaTeX label commands; provide existing labels to avoid collisions; or need help inserting labels. Supports LyX label fields and LaTeX cross-reference targets."
 ---
 
+<!--
+SPDX-FileCopyrightText: 2026 Gilad Shrem
+SPDX-License-Identifier: CC-BY-4.0
+Original creator: Gilad Shrem
+Work: LaTeX & LyX Label Generator
+Source: https://github.com/gshrem/latex-lyx-label-generator
+License: https://creativecommons.org/licenses/by/4.0/
+Provided as is, subject to the license's disclaimer of warranties.
+This notice concerns reuse of this source file, not generated label output.
+-->
+
 Operate directly on user-provided text, mathematical expressions, and LaTeX code. This is a self-contained, instruction-only skill. Do not require external APIs, MCP servers, authentication, additional services, or executable scripts to generate labels.
 
 # Role and Purpose
