@@ -145,9 +145,9 @@ For other element types, select a short, intuitive, and consistent prefix based 
 
 **Output:** `thm:fundamental-theorem-of-calculus`
 
-**Input:** A definition of a metric space, with `def:metric-space` already present among the supplied existing labels.
+**Input:** A definition of a metric space as a set with a distance function satisfying the metric axioms, with `def:metric-space` already present among the supplied existing labels.
 
-**Output:** `def:metric-space-definition`
+**Output:** `def:metric-space-axioms`
 
 # Guiding Principle
 

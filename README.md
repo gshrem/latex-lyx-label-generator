@@ -92,7 +92,7 @@ If your AI client supports standalone skills but not plugin marketplaces, use [`
 **Original creator: Gilad Shrem**  
 **Copyright:** Copyright (c) 2026 Gilad Shrem  
 **Official source:** https://github.com/gshrem/latex-lyx-label-generator  
-**Plugin source version:** `1.0.1`
+**Plugin source version:** `1.0.2`
 
 Use, modification and redistribution, including commercially, are permitted under **separate file-level licenses**, not a choice of either license for the entire project:
 

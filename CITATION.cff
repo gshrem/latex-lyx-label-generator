@@ -5,7 +5,7 @@ title: "LaTeX & LyX Label Generator"
 authors:
   - family-names: "Shrem"
     given-names: "Gilad"
-version: 1.0.1
+version: 1.0.2
 url: "https://github.com/gshrem/latex-lyx-label-generator"
 repository-code: "https://github.com/gshrem/latex-lyx-label-generator"
 license:

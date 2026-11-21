@@ -36,7 +36,7 @@
     }
   },
   "name": "latex-lyx-label-generator",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Generate concise, meaningful English labels for LaTeX and LyX cross-references from text, mathematical expressions, or LaTeX code in any language and discipline. A self-contained, instruction-only skill with no external dependencies.",
   "author": {
     "name": "Gilad Shrem",
